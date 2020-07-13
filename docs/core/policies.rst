@@ -144,7 +144,7 @@ and Mapping Policies always predict with confidence of either 0 or 1), the prior
 policies is considered. Rasa policies have default priorities that are set to ensure the
 expected outcome in the case of a tie. They look like this, where higher numbers have higher priority:
 
-    | 5. ``FormPolicy``
+    | 5. ``RulePolicy`` and ``FormPolicy``
     | 4. ``FallbackPolicy`` and ``TwoStageFallbackPolicy``
     | 3. ``MemoizationPolicy`` and ``AugmentedMemoizationPolicy``
     | 2. ``MappingPolicy``
@@ -372,6 +372,16 @@ It is recommended to use ``state_featurizer=LabelTokenizerSingleStateFeaturizer(
             ``use_maximum_negative_similarity = False``. See `starspace paper <https://arxiv.org/abs/1709.03856>`_
             for details.
 
+
+TODO: Deprecate MappingPolicy, FallbackPolicy, TwoStageFallbackPolicy
+
+
+.. _rule-policy:
+
+Rule Policy
+^^^^^^^^^^^
+
+TODO: add rulepolicy here
 
 .. _mapping-policy:
 
