@@ -1,0 +1,278 @@
+{
+  "version-2.0.0/someSidebar": [
+    {
+      "type": "category",
+      "label": "User Guide",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-2.0.0/index"
+        },
+        {
+          "type": "doc",
+          "id": "version-2.0.0/user-guide/installation"
+        },
+        {
+          "type": "doc",
+          "id": "version-2.0.0/user-guide/rasa-tutorial"
+        },
+        {
+          "type": "doc",
+          "id": "version-2.0.0/user-guide/building-assistants"
+        },
+        {
+          "type": "doc",
+          "id": "version-2.0.0/user-guide/command-line-interface"
+        },
+        {
+          "type": "doc",
+          "id": "version-2.0.0/user-guide/architecture"
+        },
+        {
+          "type": "doc",
+          "id": "version-2.0.0/user-guide/messaging-and-voice-channels"
+        },
+        {
+          "type": "doc",
+          "id": "version-2.0.0/user-guide/testing-your-assistant"
+        },
+        {
+          "type": "doc",
+          "id": "version-2.0.0/user-guide/setting-up-ci-cd"
+        },
+        {
+          "type": "doc",
+          "id": "version-2.0.0/user-guide/validate-files"
+        },
+        {
+          "type": "doc",
+          "id": "version-2.0.0/user-guide/configuring-http-api"
+        },
+        {
+          "type": "doc",
+          "id": "version-2.0.0/user-guide/how-to-deploy"
+        },
+        {
+          "type": "doc",
+          "id": "version-2.0.0/user-guide/cloud-storage"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "NLU",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-2.0.0/nlu/about"
+        },
+        {
+          "type": "doc",
+          "id": "version-2.0.0/nlu/using-nlu-only"
+        },
+        {
+          "type": "doc",
+          "id": "version-2.0.0/nlu/training-data-format"
+        },
+        {
+          "type": "doc",
+          "id": "version-2.0.0/nlu/language-support"
+        },
+        {
+          "type": "doc",
+          "id": "version-2.0.0/nlu/choosing-a-pipeline"
+        },
+        {
+          "type": "doc",
+          "id": "version-2.0.0/nlu/components"
+        },
+        {
+          "type": "doc",
+          "id": "version-2.0.0/nlu/entity-extraction"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Core",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-2.0.0/core/about"
+        },
+        {
+          "type": "doc",
+          "id": "version-2.0.0/core/stories"
+        },
+        {
+          "type": "doc",
+          "id": "version-2.0.0/core/domains"
+        },
+        {
+          "type": "doc",
+          "id": "version-2.0.0/core/responses"
+        },
+        {
+          "type": "doc",
+          "id": "version-2.0.0/core/actions"
+        },
+        {
+          "type": "doc",
+          "id": "version-2.0.0/core/reminders-and-external-events"
+        },
+        {
+          "type": "doc",
+          "id": "version-2.0.0/core/policies"
+        },
+        {
+          "type": "doc",
+          "id": "version-2.0.0/core/slots"
+        },
+        {
+          "type": "doc",
+          "id": "version-2.0.0/core/forms"
+        },
+        {
+          "type": "doc",
+          "id": "version-2.0.0/core/retrieval-actions"
+        },
+        {
+          "type": "doc",
+          "id": "version-2.0.0/core/interactive-learning"
+        },
+        {
+          "type": "doc",
+          "id": "version-2.0.0/core/fallback-actions"
+        },
+        {
+          "type": "doc",
+          "id": "version-2.0.0/core/knowledge-bases"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Conversation Design",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-2.0.0/dialogue-elements/dialogue-elements"
+        },
+        {
+          "type": "doc",
+          "id": "version-2.0.0/dialogue-elements/small-talk"
+        },
+        {
+          "type": "doc",
+          "id": "version-2.0.0/dialogue-elements/completing-tasks"
+        },
+        {
+          "type": "doc",
+          "id": "version-2.0.0/dialogue-elements/guiding-users"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "API Reference",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-2.0.0/api/action-server"
+        },
+        {
+          "type": "doc",
+          "id": "version-2.0.0/api/http-api"
+        },
+        {
+          "type": "doc",
+          "id": "version-2.0.0/api/jupyter-notebooks"
+        },
+        {
+          "type": "doc",
+          "id": "version-2.0.0/api/agent"
+        },
+        {
+          "type": "doc",
+          "id": "version-2.0.0/api/custom-nlu-components"
+        },
+        {
+          "type": "doc",
+          "id": "version-2.0.0/api/rasa-sdk"
+        },
+        {
+          "type": "doc",
+          "id": "version-2.0.0/api/events"
+        },
+        {
+          "type": "doc",
+          "id": "version-2.0.0/api/tracker"
+        },
+        {
+          "type": "doc",
+          "id": "version-2.0.0/api/tracker-stores"
+        },
+        {
+          "type": "doc",
+          "id": "version-2.0.0/api/event-brokers"
+        },
+        {
+          "type": "doc",
+          "id": "version-2.0.0/api/lock-stores"
+        },
+        {
+          "type": "doc",
+          "id": "version-2.0.0/api/training-data-importers"
+        },
+        {
+          "type": "doc",
+          "id": "version-2.0.0/api/core-featurization"
+        },
+        {
+          "type": "doc",
+          "id": "version-2.0.0/api/tensorflow_usage"
+        },
+        {
+          "type": "doc",
+          "id": "version-2.0.0/migration-guide"
+        },
+        {
+          "type": "doc",
+          "id": "version-2.0.0/changelog"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Migrate from (beta)",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-2.0.0/migrate-from/google-dialogflow-to-rasa"
+        },
+        {
+          "type": "doc",
+          "id": "version-2.0.0/migrate-from/facebook-wit-ai-to-rasa"
+        },
+        {
+          "type": "doc",
+          "id": "version-2.0.0/migrate-from/microsoft-luis-to-rasa"
+        },
+        {
+          "type": "doc",
+          "id": "version-2.0.0/migrate-from/ibm-watson-to-rasa"
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Reference",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-2.0.0/glossary"
+        }
+      ]
+    }
+  ]
+}
