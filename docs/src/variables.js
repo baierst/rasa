@@ -2,5 +2,5 @@
 
 export default {
     "release": "2.0.0a1",
-    "rasa_sdk_version": "1.10.2"
+    "rasa_sdk_version": "2.0.0a1"
 };
