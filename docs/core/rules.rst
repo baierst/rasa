@@ -43,8 +43,6 @@ is added to your model configuration:
     - ... # Other policies
     - name: RulePolicy
 
-TODO: YAML vs. Markdown
-
 Rules for the Conversation Start
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -102,13 +100,44 @@ applicable. To do so, add any information about the prior conversation, before t
       - intent: greet
       - action: utter_greet
 
+Not Predicting `ACTION_LISTEN` at the End of a Rule
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Rules default to wait for the next user message when they finished their last step:
+
+.. code-block:: yaml
+
+    rules:
+
+    - rule: Rule which will wait for user message when it was applied
+      steps:
+      - intent: greet
+      - action: utter_greet
+      # The rule implicitly includes a prediction for `action_listen` as last step.
+      # This means that Rasa Open Source will wait for the next user message.
+      - action_listen
+
+If you to hand over to another story or rule, add ``...`` as last step in order to
+indicate that the assistant should execute another action before waiting for more user
+input.
+
+.. code-block:: yaml
+
+    rules:
+
+    - rule: Rule which will not wait for user message when it was applied
+      steps:
+      - intent: greet
+      - action: utter_greet
+      - ...
+
 Rules and Forms
 ~~~~~~~~~~~~~~~
 
 Rules don't apply when a :ref:`forms` is active. Rules become applicable again if
 
 - the form filled all required slots
-- the form rejected its execution (TODO: LINK TO FORM DOCS).
+- the form rejected its execution (see :ref:`section_unhappy` for more details)
 
 .. _rules-use-cases:
 
