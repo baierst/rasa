@@ -144,7 +144,7 @@ To include this in your domain, add it to the list of actions:
 
 
 A simple way to ensure that the retrieval action is predicted after the chitchat
-intent is to use the :ref:`mapping-policy`.
+intent is to use :ref:`rules`.
 However, you can also include this action in your stories.
 For example, if you want to repeat a question after handling chitchat
 (see :ref:`unhappy-paths` )

@@ -115,7 +115,7 @@ The available default actions are:
 +-----------------------------------+------------------------------------------------+
 | ``action_restart``                | Reset the whole conversation. Can be triggered |
 |                                   | during a conversation by entering ``/restart`` |
-|                                   | if the :ref:`mapping-policy` is included in    |
+|                                   | if the :ref:`rule-policy` is included in       |
 |                                   | the policy configuration.                      |
 +-----------------------------------+------------------------------------------------+
 | ``action_session_start``          | Start a new conversation session. Take all set |

@@ -43,7 +43,7 @@ Thus, we define an intent ``ask_remind_call`` with some NLU data,
   ...
 
 and connect this intent with a new custom action ``action_set_reminder``.
-We could make this connection by providing training stories (recommended for more complex assistants), or using the :ref:`mapping-policy`.
+We could make this connection by providing training stories (recommended for more complex assistants), or using :ref:`rules`.
 
 The custom action ``action_set_reminder`` should schedule a reminder that, 5 seconds later, triggers an intent ``EXTERNAL_reminder`` with all the entities that the user provided in his/her last message (similar to an external event):
 
@@ -116,7 +116,8 @@ To do this, your Raspberry Pi needs to send a message to the `trigger_intent end
 As the name says, this injects a user intent (possibly with entities) into your conversation.
 So for Rasa it is almost as if you had entered a message that got classified with this intent and these entities.
 Rasa then needs to respond to this input with an action such as ``action_warn_dry``.
-The easiest and most reliable way to connect this action with the intent is via the :ref:`mapping-policy`.
+The easiest and most reliable way to connect this action with the intent is to use
+:ref:`rules`.
 
 .. _getting-conversation-id:
 
