@@ -22,7 +22,7 @@ Useful applications for rules are for example:
   Rasa NLU will typically show low intent confidence levels for these messages.
   You can use :ref:`fallback-classifier` to treat low NLU confidence like an FAQ.
 
-* :ref:`<forms>`: It's a common use case for assistants to collect form-like
+* :ref:`forms`: It's a common use case for assistants to collect form-like
   data from the user. Both, activation of forms as well as handling of unexpected
   events as part of a form, are usually following fixed paths.
 

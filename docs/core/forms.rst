@@ -177,10 +177,57 @@ The slot mapping will not apply if the intent of the last message is
         intent: intent_name
         not_intent: excluded_intent
 
+.. _section_unhappy:
 
 Writing Stories / Rules for Unhappy Form Paths
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Explain how featurize / unfeaturize stuff?
+
+Of course your users will not always respond with the information you ask of them.
+Typically, users will ask questions, make chitchat, change their mind, or otherwise
+stray from the happy path. The way this works with forms is that a form will raise
+an ``ActionExecutionRejection`` if the user didn't provide the requested information.
+You need to handle events that might cause ``ActionExecutionRejection`` errors
+with rules or stories. For example, if you expect your users to chitchat with your bot,
+you could add a story like this:
+
+.. code-block:: yaml
+
+    - rule: Example of an unhappy path
+      steps:
+      # Condition that form is active.
+      - form: my_form
+      - ...
+      # This unhappy path handles the case of an intent `explain`.
+      - intent: chitchat
+      - action: utter_chitchat
+      # Return to form after handling the `chitchat` intent
+      - action: my_form
+      - form: my_form
+
+In some situations, users may change their mind in the middle of the form action
+and decide not to go forward with their initial request. In cases like this, the
+assistant should stop asking for the requested slots. You can handle such situations
+gracefully using a default action ``action_deactivate_form`` which will deactivate
+the form and reset the requested slot. An example story of such conversation could
+look as follows:
+
+.. code-block:: yaml
+
+    - rule: Example of an unhappy path
+      steps:
+      # Condition that form is active.
+      - form: my_form
+      - ...
+      - intent: stop
+      - action: utter_ask_continue
+      - intent: stop
+      - action: action_deactivate_form
+      - form: null
+
+It is **strongly** recommended that you build these rules or stories using interactive
+learning. If you write these rules / stories by hand you will likely miss important
+things. Please read :ref:`section_interactive_learning_forms`
+on how to use interactive learning with forms.
 
 Advanced Usage
 --------------
